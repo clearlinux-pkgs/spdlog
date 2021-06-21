@@ -4,7 +4,7 @@
 #
 Name     : spdlog
 Version  : 1.8.5
-Release  : 6
+Release  : 7
 URL      : https://github.com/gabime/spdlog/archive/v1.8.5/spdlog-1.8.5.tar.gz
 Source0  : https://github.com/gabime/spdlog/archive/v1.8.5/spdlog-1.8.5.tar.gz
 Summary  : Fast C++ logging library.
