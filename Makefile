@@ -1,5 +1,5 @@
 PKG_NAME := spdlog
-URL = https://github.com/gabime/spdlog/archive/v1.8.5/spdlog-1.8.5.tar.gz
+URL = https://github.com/gabime/spdlog/archive/v1.9.0/spdlog-1.9.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
