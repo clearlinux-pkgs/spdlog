@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : spdlog
-Version  : 1.14.0
-Release  : 15
-URL      : https://github.com/gabime/spdlog/archive/v1.14.0/spdlog-1.14.0.tar.gz
-Source0  : https://github.com/gabime/spdlog/archive/v1.14.0/spdlog-1.14.0.tar.gz
+Version  : 1.14.1
+Release  : 16
+URL      : https://github.com/gabime/spdlog/archive/v1.14.1/spdlog-1.14.1.tar.gz
+Source0  : https://github.com/gabime/spdlog/archive/v1.14.1/spdlog-1.14.1.tar.gz
 Summary  : Fast C++ logging library.
 Group    : Development/Tools
 License  : MIT
@@ -58,15 +58,15 @@ license components for the spdlog package.
 
 
 %prep
-%setup -q -n spdlog-1.14.0
-cd %{_builddir}/spdlog-1.14.0
+%setup -q -n spdlog-1.14.1
+cd %{_builddir}/spdlog-1.14.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1714145601
+export SOURCE_DATE_EPOCH=1714493804
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -136,7 +136,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1714145601
+export SOURCE_DATE_EPOCH=1714493804
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/spdlog
 cp %{_builddir}/spdlog-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/spdlog/bab970f85d9d9b485a36b93f8678fff4850d76fd || :
@@ -270,9 +270,9 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libspdlog.so.1.14.0
+/V3/usr/lib64/libspdlog.so.1.14.1
 /usr/lib64/libspdlog.so.1.14
-/usr/lib64/libspdlog.so.1.14.0
+/usr/lib64/libspdlog.so.1.14.1
 
 %files license
 %defattr(0644,root,root,0755)
